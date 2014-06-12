@@ -38,13 +38,17 @@
 }
 
 .tablatareas1,.tablatareas2,.tablatareas3,.tablatareas4{
-    width: 20%;
+    width: 28%;
     margin-left: 4%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     text-align: justify;
     float: left;
+    overflow-y: scroll;
 }
 
+table.tablatareas1 tbody tr:nth-child(2) td,table.tablatareas2 tbody tr:nth-child(2) td,table.tablatareas3 tbody tr:nth-child(2) td,table.tablatareas4 tbody tr:nth-child(2) td{
+height: 70px;
+}
 .tablatareas1{
     border: 5px solid #d9d9d9;
     
