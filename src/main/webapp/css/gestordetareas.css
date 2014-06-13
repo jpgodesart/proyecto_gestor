@@ -203,9 +203,16 @@ body * {
 }
 .inicio1{
     position: relative;
+    height: 450px;
     left: 6px;
-    background: #FFFFFF;
+    background: url("../img/list.jpg");
     color: #3e4347;
+    background-repeat: no-repeat;
+    background-size: 80% 450px;
+    background-position: center;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover;    
     text-align: center;
     box-shadow: 10px 10px 5px #888888;
 }
