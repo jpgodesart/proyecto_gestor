@@ -14,8 +14,8 @@ var control_proyecto_list = function(path) {
             {"class": "btn btn-mini action05", "icon": "", "text": "Tareas"},
             {"class": "btn btn-mini action02", "icon": "icon-zoom-in icon-white", "text": ""},
             {"class": "btn btn-mini action03", "icon": "icon-pencil icon-white", "text": ""},
-            {"class": "btn btn-mini action04", "icon": "icon-remove icon-white", "text": ""},
-            {"class": "btn btn-mini action06", "icon": "", "text": "Usuarios"}
+            {"class": "btn btn-mini action04", "icon": "icon-remove icon-white", "text": ""}
+           /* {"class": "btn btn-mini action06", "icon": "", "text": "Usuarios"}*/
         ];
         return botonera;
     }
@@ -67,7 +67,8 @@ var control_proyecto_list = function(path) {
         loadForm(place, cabecera, view.getEmptyForm(), pie, false);
         if (action == "edit") {
             view.doFillForm(id);
-            $(prefijo_div + '#id').val('0').attr("disabled", true);
+            //$(prefijo_div + '#id').val('0').attr("disabled", true);
+            $(prefijo_div + '#id').hide();
         } else {
             $(prefijo_div + '#id').val('0').attr("disabled", true);
             $(prefijo_div + '#nombre').focus();
@@ -168,7 +169,7 @@ var control_proyecto_list = function(path) {
         usuarioControl.inicia(usuarioView, 1, null, null, 10, null, null, null, null, "id_proyecto", "equals", id);
         return false;
 
-    }*/
+    }
         function cargaUsuproyec(id) {
 
         var tarea = objeto('tarea', path);
@@ -181,7 +182,7 @@ var control_proyecto_list = function(path) {
         tareaControl.inicia(tareaView, 1, null, null, 10, null, null, null, null, "id_proyecto", "equals", id);
         return false;
 
-    }
+    }*/
     
     /**************************************************************************/
     
@@ -259,11 +260,11 @@ var control_proyecto_list = function(path) {
                     cargaTareas($(this).attr('id'));
                     
                 });
-                $(prefijo_div + '.btn.btn-mini.action06').unbind('click');
+               /* $(prefijo_div + '.btn.btn-mini.action06').unbind('click');
                 $(prefijo_div + '.btn.btn-mini.action06').click(function() {
                     cargaUsuproyec($(this).attr('id'));
                     
-                });
+                });*/
 
             }
 

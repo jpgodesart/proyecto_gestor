@@ -306,7 +306,7 @@ var vista = function(objeto, ContextPath) {
                                 tabla += "<table class=\"tablatareas3\" data-tablatareas3=\"Terminada\">";
                             }
                             if (value[valor] == 4) {
-                                tabla += "<table class=\"tablatareas4\" data-tablatareas4=\"Cerrada\">";
+                                tabla += "<table class=\"tablatareas4\" data-tablatareas4=\"Validado\">";
                             }
 
                         }

@@ -208,7 +208,7 @@ body * {
     background: url("../img/list.jpg");
     color: #3e4347;
     background-repeat: no-repeat;
-    background-size: 80% 450px;
+    background-size: 100% 450px;
     background-position: center;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
@@ -218,4 +218,20 @@ body * {
 }
 #tarea_list  div.span12 div.row-fluid div.span7 h2,#alumno_list div.span12 div.row-fluid div.span7 h2,#profesor_list div.span12 div.row-fluid div.span7 h2,#proyecto_list div.span12 div.row-fluid div.span7 h2{
     text-transform: capitalize;
+}
+.portada{
+    float: left;
+
+    margin-left: 15%;
+    margin-top: 15%;
+    text-align: center;
+    width: 30%;
+    background: #FFFFFF;
+    opacity: 0.35;
+    border: 1px #d9d9d9;
+    border-style: groove;
+}
+
+#modal02 {
+    width: 45%;
 }
